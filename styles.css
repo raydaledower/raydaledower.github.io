@@ -1,0 +1,130 @@
+/* style sheet  */
+
+/* loading fonts */
+@font-face {
+    font-family: 'Univers';
+    src: url('assets/fonts/UniversLTStd-Light.otf') format('opentype');
+    font-weight: Light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Univers';
+    src: url('assets/fonts/UniversLTStd-LightObl.otf') format('opentype');
+    font-weight: Light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'UniversRegular';
+    src: url('assets/fonts/UniversLTStd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* colour of page */
+body {
+    background-color: rgb(252, 252, 252);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* centralised titles for splash page */
+.splashTitle {
+    text-decoration: none;
+    font-size: 70px;
+    font-kerning: normal;
+    letter-spacing: 0.07em;
+    text-align: center;
+    line-height: 2.5;
+    color: rgb(3, 3, 3);
+    font-family: 'UniversRegular';
+ }
+
+ a.splashTitle {
+  text-decoration: none;
+  font-size: 70px;
+  font-kerning: normal;
+  letter-spacing: 0.07em;
+  text-align: center;
+  line-height: 2.5;
+  color: rgb(3, 3, 3); /* Grey like menu links */
+  font-family: 'UniversRegular';
+  transition: color 0.2s ease; /* Smooth transition */
+}
+
+a.splashTitle:hover {
+  color: rgb(100, 100, 100); /* Black on hover */
+}
+
+.textContainer {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+p.titleSmall {
+  font-family: 'UniversRegular';
+  font-size: 18px;
+}
+
+p.small {
+  font-family: 'UniversRegular';
+  font-size: 14px;
+}
+
+p.b {
+  font-family: 'Univers';
+  line-height: 1;
+  text-align: justify;
+  font-size: 18px;
+  color: rgb(70, 70, 70);
+}
+
+cite {
+  font-family: 'Univers';
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 0.8em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+ol.a {
+  list-stle-type: decimal;
+  list-style-position: inside;
+  font-family: 'Univers';
+  font-size: 14px;
+  color: rgb(70, 70, 70);
+  padding-left: 0;
+  margin-left: 0;
+
+}
+
+@media (max-width: 800px) {
+
+    .splashTitle {
+      font-family: 'UniversRegular';
+      font-size: 47px;
+      font-kerning: normal;
+      letter-spacing: 0.07em;
+    }
+
+    a.splashTitle {
+    font-family: 'UniversRegular'
+    font-size: 47px;
+    font-kerning: normal;
+    letter-spacing: 0.07em;
+    }
+
+    p.b {
+      line-height: 1;
+      font-family: 'Univers';
+      font-size: 14px;
+      color: rgb(70, 70, 70);
+    }
+ }
