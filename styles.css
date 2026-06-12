@@ -1,0 +1,173 @@
+/* style sheet  */
+
+/* loading fonts */
+@font-face {
+    font-family: 'Univers';
+    src: url('assets/fonts/UniversLTStd-Light.otf') format('opentype');
+    font-weight: Light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Univers';
+    src: url('assets/fonts/UniversLTStd-LightObl.otf') format('opentype');
+    font-weight: Light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'UniversRegular';
+    src: url('assets/fonts/UniversLTStd.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* colour of page */
+body {
+    background-color: rgb(252, 252, 252);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* centralised titles for splash page */
+.splashTitle {
+    text-decoration: none;
+    font-size: 70px;
+    font-kerning: normal;
+    letter-spacing: 0.07em;
+    text-align: center;
+    line-height: 2.5;
+    color: rgb(3, 3, 3);
+    font-family: 'UniversRegular';
+ }
+
+ a.splashTitle {
+  text-decoration: none;
+  font-size: 70px;
+  font-kerning: normal;
+  letter-spacing: 0.07em;
+  text-align: center;
+  line-height: 2.5;
+  color: rgb(3, 3, 3); /* Grey like menu links */
+  font-family: 'UniversRegular';
+  transition: color 0.2s ease; /* Smooth transition */
+}
+
+a.splashTitle:hover {
+  color: rgb(100, 100, 100); /* Black on hover */
+}
+
+.textContainer {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+p.titleSmall {
+  font-family: 'UniversRegular';
+  font-size: 18px;
+}
+
+p.smallLight {
+  font-family: 'Univers';
+  font-size: 0.8em;
+}
+
+p.smallRegular {
+  font-family: 'UniversRegular';
+  font-size: 0.8em;
+}
+
+p.b {
+  font-family: 'Univers';
+  line-height: 1;
+  text-align: justify;
+  font-size: 18px;
+  color: rgb(70, 70, 70);
+}
+
+cite {
+  font-family: 'Univers';
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 0.8em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+sup.fnNumCite {
+  font-size: 0.8em;
+}
+
+sup.fnNum {
+  font-size: 0.64em;
+}
+
+sup.fnNum a,
+sup.fnNumCite a,
+sup.fnNum a:visited,
+sup.fnNumCite a:visited {
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+sup.fnNum a:hover,
+sup.fnNumCite a:hover {
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+}
+
+ol.a {
+  list-style-type: decimal;
+  list-style-position: inside;
+  font-family: 'Univers';
+  font-size: 0.8em;
+  color: rgb(70, 70, 70);
+  padding-left: 0;
+  margin-left: 0;
+
+}
+
+img.a {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+
+    .splashTitle {
+      font-family: 'UniversRegular';
+      font-size: 47px;
+      font-kerning: normal;
+      letter-spacing: 0.07em;
+    }
+
+    .textContainer {
+      padding-left: 4px;
+      padding-right: 4px;
+      font-size: 14px;
+    }
+
+    a.splashTitle {
+    font-family: 'UniversRegular';
+    font-size: 47px;
+    font-kerning: normal;
+    letter-spacing: 0.07em;
+    }
+
+    p.b {
+      line-height: 1;
+      font-family: 'Univers';
+      font-size: 14px;
+      color: rgb(70, 70, 70);
+
+    }
+ }
